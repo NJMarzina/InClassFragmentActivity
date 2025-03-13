@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             R.drawable.ccf_chocolatecaramelicious
         )
 
-        val fragment1 = ImageDisplayFragment.newInstance(images_array)
+        val fragment1 = ImageDisplayFragment.newInstance(imageArray)
 
         supportFragmentManager.beginTransaction()
             .add(R.id.fragmentContainerView2, fragment1).commit()
