@@ -15,5 +15,15 @@ class MainActivity : AppCompatActivity() {
 
         // Attach an instance of ImageDisplayFragment using factory method
 
+        val images_array = intArrayOf (
+            R.drawable.ccf_caramelapple,
+            R.drawable.ccf_celebration,
+            R.drawable.ccf_chocolatecaramelicious
+        )
+
+        val fragment1 = ImageDisplayFragment.newInstance(images_array)
+
+        supportFragmentManager.beginTransaction()
+            .add(R.id.fragmentContainerView2, fragment1).commit()
     }
 }
